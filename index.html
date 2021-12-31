@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Vue Mastery</title>
+  <!-- Import Styles -->
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <!-- Import Vue.js -->
+  <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div class="nav-bar"></div>
+    <div class="cart" v-for="item in cart">Cart({{ item }})</div>
+    <product-display :cart="cart" :premium="premium" @add-to-cart="updateCart" @remove-from-cart="deleteCart"></product-display>
+    <product-display :cart="cart" :premium="premium" @add-to-cart="updateCart" @remove-from-cart="deleteCart"></product-display>
+  </div>
+  <!-- Import Js -->
+  <script src="./main.js"></script>
+  <script src="./components/ProductDisplay.js"></script>
+  <script src="./components/ProductDetails.js"></script>
+  <script src="./components/ReviewForm.js"></script>
+  <script src="./components/ReviewList.js"></script>
+  <!-- Mount App -->
+  <script>
+    const mountedApp = app.mount('#app');
+  </script>
+</body>
+
+</html>
