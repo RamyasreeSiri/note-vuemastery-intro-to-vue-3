@@ -1,1 +1,1 @@
-from https://www.vuemastery.com/courses/intro-to-vue-3/intro-to-vue3
+Course: https://www.vuemastery.com/courses/intro-to-vue-3/intro-to-vue3
